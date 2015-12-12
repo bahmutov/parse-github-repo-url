@@ -21,6 +21,13 @@
     "pre-git": "3.1.0",
     "semantic-release": "^4.3.5"
   },
+  "keywords": [
+    "github",
+    "gh",
+    "url",
+    "parse",
+    "parser"
+  ],
   "files": [
     "index.js"
   ],
