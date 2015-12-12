@@ -37,8 +37,8 @@ parse('component/emitter#1') // => ['component', 'emitter', '1']
 
 See the tests for all the different types of supported URLs.
 
-[nodei.co]: https://nodei.co/npm/parse-github-repo-url.png?downloads=true
-[npm-url]: https://npmjs.org/package/parse-github-repo-url
+[nodei.co]: https://nodei.co/npm/@bahmutov/parse-github-repo-url.png?downloads=true
+[npm-url]: https://npmjs.org/package/@bahmutov/parse-github-repo-url
 [parse-github-repo-url-ci-image]: https://secure.travis-ci.org/bahmutov/parse-github-repo-url.png?branch=master
 [parse-github-repo-url-ci-url]: http://travis-ci.org/#!/bahmutov/parse-github-repo-url
 [semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
