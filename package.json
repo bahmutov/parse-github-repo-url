@@ -18,11 +18,30 @@
   },
   "devDependencies": {
     "mocha": "2.3.4",
+    "pre-git": "3.1.0",
     "semantic-release": "4.3.5"
   },
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec --bail",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "commit": "commit-wizard",
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
+  },
+  "config": {
+    "pre-git": {
+      "commit-msg": "simple",
+      "pre-commit": [
+        "npm test"
+      ],
+      "pre-push": [
+        "npm run size"
+      ],
+      "post-commit": [],
+      "post-merge": []
+    }
   }
 }
