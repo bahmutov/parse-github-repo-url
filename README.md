@@ -2,7 +2,11 @@
 
 > Parse a GitHub URL for user/project@version
 
-[![Build status][ci-image] ][ci-url]
+[![NPM info][nodei.co]][npm-url]
+
+[![Build][parse-github-repo-url-ci-image]][parse-github-repo-url-ci-url]
+[![semantic-release][semantic-image] ][semantic-url]
+[![manpm](https://img.shields.io/badge/manpm-%E2%9C%93-3399ff.svg)](https://github.com/bahmutov/manpm)
 
 Note: this is a clone of [repo-utils/parse-github-repo-url](https://github.com/repo-utils/parse-github-repo-url)
 with additional parsers, since my [pull request](https://github.com/repo-utils/parse-github-repo-url/pull/1)
@@ -33,5 +37,9 @@ parse('component/emitter#1') // => ['component', 'emitter', '1']
 
 See the tests for all the different types of supported URLs.
 
-[ci-image]: https://travis-ci.org/bahmutov/parse-github-repo-url.png?branch=master
-[ci-url]: https://travis-ci.org/bahmutov/parse-github-repo-url
+[nodei.co]: https://nodei.co/npm/parse-github-repo-url.png?downloads=true
+[npm-url]: https://npmjs.org/package/parse-github-repo-url
+[parse-github-repo-url-ci-image]: https://secure.travis-ci.org/bahmutov/parse-github-repo-url.png?branch=master
+[parse-github-repo-url-ci-url]: http://travis-ci.org/#!/bahmutov/parse-github-repo-url
+[semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-url]: https://github.com/semantic-release/semantic-release
