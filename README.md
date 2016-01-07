@@ -21,8 +21,8 @@ Supports:
 - `git://` and `.git` w/ `#commit` or `@version`
 - `git@` and `https:git@`
 - `www.github.com`
+- `gitlab.<my company name>.com/user/repo.git` parsing
 - All 5 different ways you could download a freaking tarball/zipball
-
 
 ## API
 
