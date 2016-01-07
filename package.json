@@ -33,7 +33,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "rocha test.js",
+    "test": "node --harmony node_modules/.bin/rocha test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "commit": "commit-wizard",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
