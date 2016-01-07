@@ -17,8 +17,8 @@
     "url": "https://github.com/bahmutov/parse-github-repo-url.git"
   },
   "devDependencies": {
-    "mocha": "2.3.4",
     "pre-git": "3.1.0",
+    "rocha": "1.6.1",
     "semantic-release": "^4.3.5"
   },
   "keywords": [
@@ -33,7 +33,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec --bail",
+    "test": "rocha test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "commit": "commit-wizard",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
