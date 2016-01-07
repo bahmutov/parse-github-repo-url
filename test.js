@@ -66,6 +66,14 @@ describe('url parse', function () {
   })
 })
 
+describe('gitlab urls', function () {
+  it('parses https gitlab url', function () {
+    var url = 'https://gitlab.mycompany.com/user/test1.git'
+    var parsed = parse(url)
+    assert.deepEqual(['user', 'test1', ''], parsed)
+  })
+})
+
 describe('git @ syntax', function () {
   it('works for git url', function () {
     var url = 'git@github.com:bahmutov/lazy-ass.git'

@@ -1,5 +1,14 @@
-
 var parse = require('url').parse
+
+function isGithubLikeDomain(hostname) {
+  var domains = [
+    'github.com', 'api.github.com', 'codeload.github.com'
+  ]
+  if (domains.indexOf(hostname) !== -1) {
+    return true
+  }
+  return /^gitlab\.[a-zA-Z]+\.com$/.test(hostname)
+}
 
 module.exports = function (string) {
   // user/repo#version
@@ -17,12 +26,7 @@ module.exports = function (string) {
   }
   var url = parse(string)
 
-  switch (url.hostname) {
-  case 'github.com':
-  case 'api.github.com':
-  case 'codeload.github.com':
-    break
-  default:
+  if (!isGithubLikeDomain(url.hostname)) {
     return false
   }
 
