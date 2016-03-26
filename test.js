@@ -87,3 +87,11 @@ describe('git @ syntax', function () {
     assert.deepEqual(['bahmutov', 'lazy-ass', ''], parsed)
   });
 })
+
+describe('github enterprise urls', function () {
+  it('parses https github enterprise url', function () {
+    var url = 'https://git.mycompany.com/user/test1.git'
+    var parsed = parse(url)
+    assert.deepEqual(['user', 'test1', ''], parsed)
+  })
+})
