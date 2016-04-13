@@ -1,3 +1,7 @@
+# DEPRECATED - all features were merged back into 
+# original repo [repo-utils/parse-github-repo-url](https://github.com/repo-utils/parse-github-repo-url)
+# available on NPM under "parse-github-repo-url"
+
 # @bahmutov/parse-github-repo-url
 
 > Parse a GitHub URL for user/project@version
